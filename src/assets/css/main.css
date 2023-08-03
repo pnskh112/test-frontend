@@ -1,0 +1,57 @@
+:root {
+  --line-height: 32px;
+  --letter-spacing: -0.078px;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/lineSeedJp/LINESeedJP_TTF_Rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/lineSeedJp/LINESeedJP_TTF_Bd.ttf") format("truetype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "LINE Seed JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  letter-spacing: var(--letter-spacing);
+}
+
+#app > .Main > :first-child {
+  padding-top: 24px;
+}
+
+#app > .Main > :last-child {
+  padding-bottom: 24px;
+}
+
+p,
+div,
+dl,
+dt,
+dd {
+  margin: 0;
+  line-height: var(--line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
